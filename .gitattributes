@@ -1,0 +1,4 @@
+
+# Apply the 'local_path_filter' to config.yml files in this repository
+config.yml filter=local_path_filter
+

@@ -1,0 +1,31 @@
+# config.yml
+# change the paths to the correct ones on your system
+
+orthology_analysis_settings:
+  orthology_path: "<path_to_repository>/functional-synapses-between-small-cell-lung-cancer-and-glutamatergic-neurons/example_files/orthology/20200106_v22_vM23_hcop_protein_coding_genes.txt"
+  gencode_mouse_version: "vM23"
+  gencode_human_version: "v22"
+  hcop_orthology_version: "20200106"
+  gencode_mouse_path: "<path_to_supporting_datasets>/GENCODE/gencode.vM23.annotation.gtf"
+  gencode_human_path: "<path_to_supporting_datasets>/GENCODE/gencode.v22.annotation.gtf"
+  hcop_orthology_path: "<path_to_supporting_datasets>/HCOP_orthology/20200106_human_mouse_hcop_fifteen_column.txt"
+  base_dir: "<path_to_repository>/functional-synapses-between-small-cell-lung-cancer-and-glutamatergic-neurons/example_files/"
+
+piggybac_pipeline_run_settings:
+  base_dir: "<path_to_repository>/functional-synapses-between-small-cell-lung-cancer-and-glutamatergic-neurons/example_files/"
+  samples_bam_folder: "<path_to_piggybac_samples_bam_files>"
+  reference_genome_path: "<path_to_reference_genomes>/mouse/ensembl/GRCm38/Mus_musculus.GRCm38.dna.primary_assembly.fa"
+  gencode_gtf_path: "<path_to_supporting_datasets>/GENCODE/gencode.vM23.annotation.gtf"
+  orthology_path: "<path_to_repository>/functional-synapses-between-small-cell-lung-cancer-and-glutamatergic-neurons/example_files/orthology/20200106_v22_vM23_hcop_protein_coding_genes.txt"
+  chromosomes: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "X", "Y"]
+  insertions_cutoff: 5
+  germline_size: 1000000
+  germline_insertions_cutoff: 10
+  threads: 24
+  repetitions_subcohort_comparison: 1000000
+  subcohort_comparisons:
+    - ["chemotherapy", "untreated"]
+    - ["aPD1", "untreated"]
+    - ["metastasis", "lung_untreated"]
+
+
